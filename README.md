@@ -7,6 +7,7 @@
 3. **Robot**
 4. **pip**
 5. chromedriver
+6. Selenium Library
 
 > If you don't have homebrew installed go to [Homebrew installation](#homebrew-installation)
 
@@ -34,6 +35,22 @@ Before starting the installlation process, check what is already installed with 
 
 1. Open your **Terminal** app (Quit it first if already open)
 2. Run the following command `pip install robotframework`
+3. Verify robot was installed running the following command `robot --version`
+
+### Selenium Library
+*If you have more than 1 pip versione installed do all the following comands with pip3 instead if pip*
+
+1. Open your **Terminal** app (Quit it first if already open)
+2. Run the following command ` pip install --upgrade robotframework-seleniumlibrary`
+3. Verify selenium library was installed running the folloeing command `pip show robotframework-seleniumlibrary`
+
+## Chrome and Firefox(this one is optional) Driver Installation
+*If you have more than 1 pip versione installed do all the following comands with pip3 instead if pip*
+
+1. Open your **Terminal** app (Quit it first if already open)
+2. Run the following command `pip install webdrivermanager`
+3. Run the following command `webdrivermanager firefox chrome --linkpath /usr/local/bin`
+4. Verify the driver(s) was/were installed with the following comand Chrome: `chromedriver --version`   Firefox: `geckodriver --version`
 
 ### Homebrew Installation 
 1. Open your **Terminal** app (Quit it first if already open)
